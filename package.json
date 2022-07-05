@@ -1,0 +1,23 @@
+{
+  "name": "controlroommates",
+  "version": "1.0.0",
+  "description": "Control de gastos roommates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejandraRuizP/controlRoommates.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlejandraRuizP/controlRoommates/issues"
+  },
+  "homepage": "https://github.com/AlejandraRuizP/controlRoommates#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1"
+  }
+}

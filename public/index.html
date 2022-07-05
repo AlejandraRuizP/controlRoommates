@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Roomates</h1>
+    <!-- <a href="html/agregarR.html">Agregar Roommate</a> <br>
+    <a href="html/agregarGasto.html">Agregar Gasto</a> <br>
+    <a href="html/historialGastos.html">Historial de Gastos</a> -->
+    <div id="integrantes">
+        <br><br>
+       <form action="agregar" method="post">
+           <input type="text" name="id" id="id" placeholder="Id"> <br>
+           <input type="text" name="nombre" id="nombre" placeholder="Nombre"> <br>
+           <input type="text" name="apellido" id="apellido" placeholder="Apellido"> <br>
+           <input type="email" name="email" id="email" placeholder="E-mail"> <br>
+           <input type="password" name="password" id="password" placeholder="Password"> <br>
+           <input type="submit" name="agregar" value="Agregar">
+       </form>
+   </div> <hr>
+   <div id="gastos">
+    <form action="gastos" method="post">
+        <label for="integrantes">Roommate:</label> <br>
+        <input type="text" name="integrante" id="nombre"> <br>
+        <label for="descripcion">Descripcion</label> <br>
+        <textarea name="descripcion" id="" cols="30" rows="10"></textarea> <br>
+        <label for="monto">Monto del gasto</label> <br>
+        <input type="text" name="monto" id=""> <br>
+        <input type="submit" name="agregarGasto" id="btn-gasto" value="Agregar gasto"> <br>
+    </form>  
+   </div> <hr>
+   <div id="hostorial">
+    <h1>Historial de gastos</h1>
+    <ul>
+        <li> gasto 1</li> <hr>
+    </ul>
+
+</div>
+   
+     <script src="control.js"></script>
+</body>
+</html>
