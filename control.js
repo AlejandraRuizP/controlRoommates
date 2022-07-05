@@ -7,6 +7,17 @@ var bodyParser=require('body-parser');
 app.use(express.static('public'));
 app.get('/', (req, res) => res.send('Hello World!'))
 //--------------------------------------
+async function crearR(){
+    let respuesta= await axios.post('https://reqres.in/api/users',usuario,config);
+    console.log('codigo:'+ respuesta.status);
+    console.log('status:'+respuesta.statusText);
+    console.log('datos');
+    if(respuesta.status==201){
+        console.log(respuesta.data);
+    }else{
+        console.log('error');
+    }
+}
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.post('/agregar',(req,res)=>{
