@@ -4,7 +4,7 @@ const fs            =require('fs');
 const express       = require('express');
 const app           = express();
 const port          = 3000;
-var   bodyParser    =require('body-parser');
+const bodyParser    =require('body-parser');
 const {v4: uuidv4}  = require('uuid');
 const { json }      = require('express');
 
