@@ -159,7 +159,6 @@ app.get('/editar/:id',(req,res)=>{
             <input name="descripcion" type="text" value="${g.descripcion}" placeholder="Descripción">
             <input name="monto" type="tesxt" value="${g.monto}" placeholder="Monto">
             <input name="nombre" type="tesxt" value="${g.nombre}" placeholder>
-    
             <a href="/editar/guardar"><input type="submit" value="Guardar cambio" id="btnEditar"></a>
             <a href="/historial"><input type="submit" name="eliminarGasto" value="volver" id="btnEliminar"></a></form></tr>`
         }
@@ -189,9 +188,7 @@ app.post('/editar/guardar',(req,res)=>{
         }
     })
 })
-
-
-//delete gasto
+//eliminar gasto
 app.get('/eliminarGasto/:id', (req,res)=>{
     var ruta= req.params.id;
     gastosJson=gastosJson.filter(elemento=>{
