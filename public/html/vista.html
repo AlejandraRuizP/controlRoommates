@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/test.css">
+    <title>Test</title>
+</head>
+<body>
+
+    <header>
+        <h1>Roommates</h1>
+    </header>
+    <div class="contenedor">
+
+        <div id="gastos">
+            <h2>Ingresar gasto</h2>
+            <form action="agregarGasto" method="post" id="agregarGasto">
+                <label for="integrantes">Roommate:</label> <br>
+               <select name="integrantes" id="integrantes">
+                usuarios
+               </select> <br>
+               <br>
+                <label for="descripcion">Descripción</label> <br>
+                <textarea name="descripcion" id="" cols="30" rows="10"></textarea> <br>
+                <label for="monto">Monto del gasto</label> <br>
+                <input type="text" name="monto" id=""> <br><br>
+                <input type="submit" name="agregarGasto" id="btns" value="Agregar gasto" > <br>
+            </form>
+        </div>
+
+        <div id="acciones">
+            <div id="btn">
+                <form action="agregar" method="post"> 
+                    <input type="submit" name="agregar" value="Agregar Roommate" id="btns">
+               </form> <br>
+              <a href="/roommates"><input type="submit" value="Mostrar Roommates" id="btns"></a>
+                <br><br>
+              <!--   <form action="historial" method="get"> -->
+                    <a href="/historial"><input type="submit" value="Ver historial de gastos" id="btns"></a>
+               <!--  </form> -->
+               
+
+            </div>
+        
+        </div>
+
+    </div>
+</body>
+</html>

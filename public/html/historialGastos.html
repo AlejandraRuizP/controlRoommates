@@ -4,15 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/test.css">
+    <title>Historial Gastos</title>
 </head>
 <body>
-    <div id="hostorial">
+    <header>
         <h1>Historial de gastos</h1>
-        <ul>
-            <li> gasto 1</li> <hr>
-        </ul>
-
+    </header><br>
+    <div class="table">
+        
+        <table></table> <br>
+        <a href="/"><input type="submit" value="Volver"></a>
     </div>
+    <div id="Editar">
+        <h2>Editar gasto</h2>
+        <form action="editarGasto" method="put" id="editarGasto">
+            __id__ <br>
+            <label for="integrantes">Roommate:</label> <br>
+           <select name="integrantes" id="integrantes">
+            usuarios
+           </select> <br>
+           <br>
+            <label for="descripcion">Descripción</label> <br>
+            <textarea name="descripcion" id="" cols="30" rows="10"></textarea> <br>
+            <label for="monto">Monto del gasto</label> <br>
+            <input type="text" name="monto" id=""> <br><br>
+            <input type="submit" name="guardarEdit" id="btns" value="Guardar cambios" > <br>
+        </form>
+    </div>
+    <!-- <table>
+       <tr>
+            <th>Gasto</th>
+            <th>Monto</th>
+            <th>Roommate</th>
+            <th>Acciones</th>
+          </tr>
+    </table> -->
+   
+  <script src="test.js"></script> 
 </body>
 </html>

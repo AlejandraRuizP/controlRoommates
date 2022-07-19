@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Koulen&family=Lato:ital@1&family=Open+Sans:wght@500&family=PT+Serif:ital,wght@1,700&family=Press+Start+2P&family=Public+Sans:wght@200&family=Roboto&family=Seymour+One&family=Signika+Negative:wght@700&family=Source+Sans+Pro:wght@200&family=Titan+One&family=Zilla+Slab:wght@300&display=swap');
+*{
+    font-family: 'Lato', sans-serif;
+}
+header{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    color: white;
+    align-items: center;
+    margin: auto;
+}
+table{
+    width: 50%;
+    margin: auto;
+}
+  
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    color: white;
+    font-size: 15px;
+ }
+.table{
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+   
+}
+#Editar{
+    display: none;
+}
+body{
+   background-color: #2b0440; 
+    padding-top: 2%;
+    font-size: 25px;
+}
+.contenedor{
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+input,textarea,select{
+    outline: none;
+    border: none;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+input,select{
+    height: 40px;
+}
+#gastos,#acciones{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+#gastos{
+    color: white;
+}
+#btn{
+    padding: 5%;
+} 
+#btns{
+    padding: 5px;
+    width: 230px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#btnl, #btnEditar, #btnEliminar{
+    width: 60px;
+    height: 20px;
+    font-size: 15px;
+}
+input:hover {
+    background-color: #845db0;
+  }
+@media (max-width:1000px){
+    .contenedor{
+        display: inline;
+        /* float: center; */
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    #gastos,#acciones,header{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .table{
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        font-size: 15px;
+    }
+}
